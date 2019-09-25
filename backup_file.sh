@@ -7,7 +7,7 @@ function backup_file() {
     cp $1 $back
   fi
 }
-backup_file /etc/hosts
+backup_file /etc/passwd
 if [[ $? -eq 0 ]]; then
   echo "Backup succeeded!"
 fi
